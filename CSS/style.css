@@ -1,0 +1,151 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+}
+
+.wrapper {
+    width: 100%;
+    box-shadow: 0px 1px 3px #487da8;
+    background: #487da8;
+}
+
+
+/*----- Phần menu -----*/
+
+.menu {
+    width: 1000px;
+    margin: 0px auto;
+    background: #487da8;
+    height: 50px;
+    margin-top: 0;
+}
+
+.menu li {
+    margin: 0px;
+    list-style: none;
+    font-family: 'Ek Mukta';
+}
+
+.menu a {
+    transition: all linear 0.15s;
+    color: #919191;
+    text-decoration: none;
+}
+
+.menu li:hover>a,
+.menu .current-item>a {
+    text-decoration: none;
+    color: #c3babc;
+}
+
+.menu .arrow {
+    font-size: 11px;
+    line-height: 0%;
+}
+
+
+/*----- css cho phần menu cha -----*/
+
+.menu>ul>li {
+    float: left;
+    display: inline-block;
+    position: relative;
+    font-size: 19px;
+}
+
+.menu>ul>li>a {
+    padding: 10px 40px;
+    display: inline-block;
+    color: rgb(36, 34, 34);
+}
+
+.menu>ul>li:hover>a,
+.menu>ul>.current-item>a {
+    background: #2e2728;
+}
+
+
+/*----css cho menu con----*/
+
+.menu li:hover .sub-menu {
+    z-index: 1;
+    opacity: 1;
+}
+
+.sub-menu {
+    width: 160%;
+    padding: 5px 0px;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity linear 0.15s;
+    box-shadow: 0px 2px 3px rgb(229, 225, 225);
+    background: #eeebeb;
+}
+
+.sub-menu li {
+    display: block;
+    font-size: 16px;
+}
+
+.sub-menu li a {
+    padding: 10px 30px;
+    display: block;
+}
+
+.sub-menu li a:hover,
+.sub-menu .current-item a {
+    background: #3e3436;
+}
+
+
+/*..............produc...............*/
+
+.product {
+    width: 100%;
+    padding: 6px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-left {
+    width: 50%;
+}
+
+.product-left img {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.product-right {
+    width: 50%;
+    padding-left: 100px;
+    padding-right: 0px;
+}
+
+.product-right h2 {
+    color: orange;
+}
+
+.product-right ul {
+    background-color: #7c9db8;
+}
+
+.product-right ul li {
+    list-style: none;
+    line-height: -6px;
+}
+
+h3 {
+    padding-left: 300px;
+    color: orange;
+}
